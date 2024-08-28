@@ -1,0 +1,150 @@
+{\rtf1\ansi\ansicpg1254\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red183\green111\blue179;\red24\green24\blue24;\red70\green137\blue204;
+\red140\green211\blue254;\red193\green193\blue193;\red194\green126\blue101;\red67\green192\blue160;\red212\green214\blue154;
+\red89\green138\blue67;\red202\green202\blue202;\red167\green197\blue152;}
+{\*\expandedcolortbl;;\cssrgb\c77255\c52549\c75294;\cssrgb\c12157\c12157\c12157;\cssrgb\c33725\c61176\c83922;
+\cssrgb\c61176\c86275\c99608;\cssrgb\c80000\c80000\c80000;\cssrgb\c80784\c56863\c47059;\cssrgb\c30588\c78824\c69020;\cssrgb\c86275\c86275\c66667;
+\cssrgb\c41569\c60000\c33333;\cssrgb\c83137\c83137\c83137;\cssrgb\c70980\c80784\c65882;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww15460\viewh9420\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 DESTRUCTOR ASIL KULLANIM AMACI:\
+\
+Destructorlar\uc0\u305 n as\u305 l kullan\u305 m amac\u305  construtoc ile olu\u351 turdugumuz nesneyle i\u351 imiz bitti\u287 i zaman nesnenin i\'e7indeki pointerlar\u305  silmek i\'e7indir.\
+\
+Destructor fonk i\'e7inde nesne i\'e7inde kullan\uc0\u305 lan pointerlar varsa o pointerlar delete edilir.\'d6NEML\u304 !!\
+\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+KALITIM:\
+Kal\uc0\u305 t\u305 m\u305  kullanabilmek i\'e7in bir tane ana s\u305 n\u305 f olmal\u305 .Ve o ana s\u305 n\u305 f\u305 n metotlar\u305 n\u305  kullanabilecek birka\'e7 yavru s\u305 n\u305 f olmal\u305 .Bu s\u305 n\u305 flar ana s\u305 n\u305 f\u305 n i\'e7indeki metotdu kullanabilir.Buna da kal\u305 t\u305 m denir.\
+\
+SINIF TANIMINI .H VE .CPP TANIMINI B\uc0\u304 LD\u304 G\u304 M \u304 \'c7\u304 N YAZMADIM.\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97________\'97\'97\'97\
+ALT SINIFTA KALITIMI KULLANMAK:\
+\
+Bunun i\'e7in ilk ba\uc0\u351 ta ana s\u305 n\u305 ftan fakrl\u305  olarak farkl\u305  .h ve .cpp dosyas\u305  olu\u351 turuyorum.Daha sonra ana s\u305 n\u305 f\u305 n .h dosyas\u305 n\u305  altms\u305 n\u305 f\u305 n .h \u305 na ekliyorum.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 #pragma\cf4 \strokec4  \cf5 \strokec5 once\cf6 \cb1 \strokec6 \
+\cf2 \cb3 \strokec2 #include\cf4 \strokec4  \cf7 \strokec7 "hayvan.h"\cf6 \cb1 \strokec6 \
+\
+\cf4 \cb3 \strokec4 class\cf6 \strokec6  \cf8 \strokec8 kedi\cf6 \strokec6  : \cf4 \strokec4 public\cf6 \strokec6  \cf8 \strokec8 hayvan\cf6 \strokec6 \{\cb1 \
+\cf4 \cb3 \strokec4 public:\cf6 \cb1 \strokec6 \
+\cb3     \cf9 \strokec9 kedi\cf6 \strokec6 (\cf8 \strokec8 string\cf6 \strokec6  \cf5 \strokec5 ad\cf6 \strokec6 );\cb1 \
+\cb3     \cf4 \strokec4 void\cf6 \strokec6  \cf9 \strokec9 fareyakala\cf6 \strokec6 ();\cb1 \
+\cb3 \};\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+Alt s\uc0\u305 n\u305 f .h dosyas\u305 .\
+\
+: public hayvan ile kal\uc0\u305 t\u305 m\u305  yapt\u305 k.\
+\
+DAHA SONRA ALT SINIFIN .cpp DOSYASI \uc0\u304 \'c7\u304 NE:\
+\
+Ana s\uc0\u305 n\u305 f\u305 n constructoruyla ayn\u305  \u351 eyleri tan\u305 mlamak gerekiyor.\'c7\'fcnk\'fc ana s\u305 n\u305 f \'fczerinden tan\u305 mlad\u305 \u287 \u305 m i\'e7in ana s\u305 n\u305 f\u305 n metotlar\u305 n\u305  doldurmal\u305 y\u305 m.\
+\
+YAVRU SINIFIN .CPP DOSYASINA HEM YAVRU SINIFIN .H I HEMDE AMA SINIFIN .H INI EKLE.\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 \strokec10 // CONSTRUCTOR\cf6 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf8 \cb3 \strokec8 kedi\cf6 \strokec6  :: \cf9 \strokec9 kedi\cf6 \strokec6 (\cf8 \strokec8 string\cf6 \strokec6  \cf5 \strokec5 ad\cf6 \strokec6 ) : \cf8 \strokec8 hayvan\cf6 \strokec6 (\cf5 \strokec5 ad\cf6 \strokec6 )\{\cb1 \
+\
+\cb3 \}\cb1 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 Daha sonra constructoru ana s\uc0\u305 n\u305 f\u305 n istedi\u287 i \u351 ekilde yap.\
+Normal \uc0\u351 ekilde \'e7a\u287 \u305 rd\u305 m ama sonra : ile ana s\u305 n\u305 fa da bu ad\u305  yollad\u305 m ki contructor adam ak\u305 ll\u305  \'e7al\u305 \u351 s\u305 n.\
+\
+BUNLARDNA SONRA KALITIM \uc0\u304 \u350 \u304  B\u304 TT\u304 . BEN YAVRU SINIFIMA AYRI \u350 EK\u304 LDE FONK EKLEYEB\u304 L\u304 R\u304 M.BU BANA KALMI\u350 .\
+\
+MA\uc0\u304 NDE YAVRU CLASSTAN NESNE OLU\u350 TURACAGIM ZAMAN YAVRU CLASS ISIMINI KULLANARAK OLU\u350 TURAAGIM.\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+PROTECTED KULLANIMI VE NED\uc0\u304 R?\
+Protected public ve private gibi de\uc0\u287 i\u351 ken tan\u305 mlama metodudur.Public de\u287 i\u351 ken ve metotlara her yerden eri\u351 ilebilirken private metotlara sadece o class i\'e7inde eri\u351 ilir.YAVRUSUNDA B\u304 LE ER\u304 \u350 \u304 LEMEZ.\
+\
+AMA BEN yavru classlardan metoduma eri\uc0\u351 imi istiyorum ve ba\u351 ka classlardan eri\u351 im istemiyorsam protected olarak tan\u305 mlayabilirim.\
+\
+Bu sayede metotlar\uc0\u305 ma yavru classlardan eri\u351 ilir ama ba\u351 ka bir yerden eri\u351 ilemez.\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+C++ STAT\uc0\u304 C DE\u286 \u304 \u350 KENLER\
+\
+Static de\uc0\u287 i\u351 kenleri c++ i\'e7inde kullanma amac\u305 : de\u287 i\u351 kenin sadece tan\u305 mland\u305 \u287 \u305  fonksiyon yada classs i\'e7inde de\u287 ilde global olarak tan\u305 mlamak i\'e7indir.\
+\
+CLASS \uc0\u304 \'c7\u304 NDE KULLANIMI:\
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf4 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 static\cf6 \strokec6  \cf4 \strokec4 int\cf6 \strokec6  \cf5 \strokec5 kedisayisi\cf6 \strokec6 ;\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0  Class i\'e7ine tan\uc0\u305 mlad\u305 m.Buna class i\'e7inde de\u287 er atayamam.Class\u305 n contructor ve destructoru i\'e7ine bunu ekledim.Bu sayede classtan nesne  olu\u351 turuluekn ve silinirken saya\'e7 ile tutar\u305 m.\
+\uc0\u304 \u350 TE BUNU YAOPAB\u304 LME SEBEB\u304 M\u304 Z STAT\u304 C DE\u286 \u304 \u350 KEN\u304 N GLOBAL OLARAK TANIMLANMASIDIR.\
+\
+CLASSTA TANIMLANAN STAT\uc0\u304 C DE\u286 \u304 \u350 KENE DE\u286 ER ATAMAK \u304 \'c7\u304 N:\
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf4 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 int\cf6 \strokec6  \cf8 \strokec8 kedi\cf6 \strokec6 ::\cf5 \strokec5 kedisayisi\cf6 \strokec6  \cf11 \cb3 \strokec11 =\cf6 \cb3 \strokec6  \cf12 \cb3 \strokec12 0\cf6 \cb3 \strokec6 ;\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0  KULLANILIR.\
+\
+BU SAYEDE BU GLOBAL DE\uc0\u286 \u304 \u350 KEN\u304 M\u304  KONMTROL EDEB\u304 L\u304 R\u304 M.\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+STAT\uc0\u304 K METOTLAR:\
+YUKARDAK\uc0\u304  ANLATIM GENELDE KULLANILMAZ.\
+ \
+Static metodlar\uc0\u305 n tan\u305 m\u305 n\u305  yapmak i\'e7in : \
+Metodun ba\uc0\u351 \u305 na static yazmal\u305 y\u305 m.\
+DAHA SONRA STAT\uc0\u304 C DE\u286 \u304 \u350 KEN\u304  TANIMLARKEN .CPP \u304 \'c7\u304 NE YAPILMASI DAHA \u304 Y\u304  OLUR.\
+VE STAT\uc0\u304 C DE\u286 \u304 \u350 KENLERDE PR\u304 VATE TANIMLANAB\u304 L\u304 R.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf6 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec6    \cf4 \strokec4 static\cf6 \strokec6  \cf4 \strokec4 int\cf6 \strokec6  \cf9 \strokec9 getKediSayisi\cf6 \strokec6 ();\cb1 \
+\cf4 \cb3 \strokec4 private:\cf6 \cb1 \strokec6 \
+\cb3     \cf4 \strokec4 static\cf6 \strokec6  \cf4 \strokec4 int\cf6 \strokec6  \cf5 \strokec5 kedisayisi\cf6 \strokec6 ;\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+TANIMLAMASI YAPILDI.\
+.h i\'e7ine fon imzas\uc0\u305  yaz\u305 ld\u305 .\
+EN sonra .cpp i\'e7ine fon yaz\uc0\u305 lacak.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf4 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 int\cf6 \strokec6  \cf8 \strokec8 kedi\cf6 \strokec6 ::\cf9 \strokec9 getKediSayisi\cf6 \strokec6 ()\{\cb1 \
+\cb3     \cf2 \strokec2 return\cf6 \strokec6  \cf5 \strokec5 kedisayisi\cf6 \strokec6 ;\cb1 \
+\cb3     \cb1 \
+\cb3 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+B\'f6yle yap\uc0\u305 l\u305 r.\
+\
+\
+\
+\
+\
+\
+\
+\
+}

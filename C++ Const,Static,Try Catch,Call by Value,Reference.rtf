@@ -1,0 +1,84 @@
+{\rtf1\ansi\ansicpg1254\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww14000\viewh18000\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 C++ Const:\
+\
+Proje yaparken de\uc0\u287 i\u351 tirilmemesini istedi\u287 im de\u287 i\u351 keni tan\u305 mlarken ba\u351 \u305 na const yazarsam o de\u287 i\u351 ken asla de\u287 i\u351 mez.\
+\'d6rnek:\
+\
+Const double pi = 3.14;\
+\
+Constlu de\uc0\u287 i\u351 keni de\u287 i\u351 tiremem ama kullanabilirim.\
+\
+\
+C++ Static:\
+\
+Bir de\uc0\u287 i\u351 ken static olarak tan\u305 mland\u305 \u287 \u305 nda prpgram\u305 n \'f6mr\'fc boyunca ona yer ayr\u305 l\u305 r.Ve ne kadar \'e7ok \'e7a\u287 r\u305 l\u305 rsa \'e7a\u287 r\u305 ls\u305 n de\u287 i\u351 kenin de\u287 eri bir sonraki i\u351 lev \'e7a\u287 r\u305 s\u305 na ta\u351 \u305 n\u305 r.\
+STAT\uc0\u304 C DE\u286 \u304 \u350 KEN B\u304 RDEN \'c7OK \'c7A\u286 RILSA B\u304 LE STAT\u304 K DE\u286 \u304 \u350 KEN \u304 \'c7\u304 N BELLEK 1 KERE AYRLIR.\
+\
+\'d6RNEK:\
+Bir fonksiyonun var ve fonksiyon i\'e7inde:\
+\uc0\u304 nt saya\'e7 = 0;\
+sayac++\
+\
+Yazd\uc0\u305 n.Ve fona ka\'e7 kere \'e7al\u305 \u351 t\u305 r\u305 ld\u305  g\'f6rmek istedin bu \u351 ekil yaparsam saya\'e7 de\u287 i\u351 keni her fon \'e7al\u305 \u351 t\u305 \u287 \u305 nda 0 lan\u305 r ve tekrar ba\u351 lan\u305 r.\
+E\uc0\u287 er ba\u351 \u305 na static yazarsam ona bellekte 1 kere yer ayr\u305 l\u305 r ve yeniden tan\u305 mlanma yap\u305 lmaz.\
+\
+STAT\uc0\u304 C INT SAYAC = 0;\
+SAYAC++;\
+YAPARAK FONK \'c7ALI\uc0\u350 MA SAYISINI BULURUM!!1\
+\
+NOT: STAT\uc0\u304 C L\u304  DE\u286 \u304 \u350 KEN SADECE KEND\u304  FONKS\u304 YONU \u304 \'c7\u304 NDE TUTULUR.AYNI \u304 S\u304 MLE FARKLI FONKS\u304 YONDA TANIMLANSA B\u304 LE HEPS\u304  AYRI \u350 EK\u304 LDE \u304 \u350 LEN\u304 R.\
+\
+NOT : HEPS\uc0\u304  FONK \u304 \'c7\u304 NDE LOCAL OLARAK TUTULUR.\
+\
+\
+C++ TRY CATCH:\
+Programdaki. Hatalar\uc0\u305 n \'e7\'f6kmesini engellemek i\'e7in kullan\u305 l\u305 r.\
+\
+Kullan\uc0\u305 l\u305 rken hata \'e7\u305 kacak b\'f6l\'fcm\'fc try i\'e7ine koyar\u305 z.\
+\
+Try\{\
+	if (bolen == 0)\{\
+		throw 99;\}\
+	sonuc = bolunen/bolen;\
+	cout << \'93Sonuc: \'93<<sonuc;	\
+\}\
+catch(int HataKodu)\{\
+	cout<<\'93Bolen say\uc0\u305  0 olamaz.\'94;\
+	\
+\}\
+Bu kodda throw 99 u catch yakalad\uc0\u305 . VE HATAYI KULLANIYA B\u304 LD\u304 RMEKL \u304 \'c7\u304 N \u304 \'c7\u304 NDE TANIMLI OLAN METOTLARI UYGULADI.\
+\
+C++ CALL BY VALUE:\
+Fonksiyon \'e7agr\uc0\u305 l\u305 rken parametrenin aktar\u305 lmay\u305 p sadece de\u287 erinin aktar\u305 lmas\u305 na CALL BY VALUE denir.\
+\
+Burada de\uc0\u287 i\u351 ken metot i\'e7inde de\u287 i\u351 tirilirse maine yans\u305 maz.\
+NORMAL TANIM\
+\
+\
+C++ CALL BY REFERENCE:\
+Fonksiyon \'e7agr\uc0\u305 l\u305 rken parametrenin aktar\u305 l\u305 p fonksiyon i\'e7indeki de\u287 i\u351 ikli\u287 in mainin etkiledi\u287 i t\'fcre denir.\
+\
+BUNUN \uc0\u304 \'c7\u304 N:\
+Fonksiyonumun parametre k\uc0\u305 sm\u305 na \
+Void de\uc0\u287 i\u351 tir(int& de\u287 er) \'97\'97\'97> yaparak PARAMETREY\u304  KOMPLE AKTARIRIZ VE FONKDAK\u304  DE\u286 \u304 \u350 \u304 KL\u304 K MA\u304 N\u304  ETK\u304 LER.\
+\
+bittiiii\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}

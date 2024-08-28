@@ -1,0 +1,105 @@
+{\rtf1\ansi\ansicpg1254\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red193\green193\blue193;\red70\green137\blue204;\red24\green24\blue24;
+\red67\green192\blue160;\red212\green214\blue154;\red140\green211\blue254;\red194\green126\blue101;\red0\green0\blue0;
+\red202\green202\blue202;\red251\green2\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c80000\c80000\c80000;\cssrgb\c33725\c61176\c83922;\cssrgb\c12157\c12157\c12157;
+\cssrgb\c30588\c78824\c69020;\cssrgb\c86275\c86275\c66667;\cssrgb\c61176\c86275\c99608;\cssrgb\c80784\c56863\c47059;\cssrgb\c0\c0\c0;
+\cssrgb\c83137\c83137\c83137;\cssrgb\c100000\c25279\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww14080\viewh14880\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 POL\uc0\u304 FORM\u304 ZM:\
+\
+\'c7ok bi\'e7imlilk hayvan ad\uc0\u305 nda tan\u305 mlanan bir ana class\u305 n hem kedi hemde k\'f6pek t\'fcr\'fcnden tan\u305 mlanabilece\u287 ine denir.\
+\
+V\uc0\u304 RTUAL FUNCT\u304 ON:\
+Polimorfizm i cpp de kullanabilmek i\'e7in tan\uc0\u305 mlamak gerekir.\
+\
+SANAL FONKSYONLARLA BERABER POL\uc0\u304 MORF\u304 ZM KULLANIMI:\
+\
+Sanal fonksiyonlar normalde java ve ba\uc0\u351 ka dillerde yok sadece cpp de var.\
+Polimorfizmi kulanmak i\'e7in virtual kullanmak gerekiyor.Bunun i\'e7in ilk ba\uc0\u351 ta bir ana s\u305 n\u305 f\u305 m\u305 z var ismi hayvan 2 tane yavru clas\u305 m var bu yavru classlar atalar\u305 ndan ald\u305 \u287 \u305  fonksiyonu de\u287 i\u351 tirerek kullanacak.\
+AMA MA\uc0\u304 N FONKS\u304 YONDA \'c7AGIRIKEN ANA CLASSTAN B\u304 R PO\u304 NTER OLU\u350 TURUP O PO\u304 NTERA YAVRU CLASSTAN NESNEY\u304  ADRES OLARAK VERMEM\u304 Z GEREK\u304 YOR.\
+\
+\'d6RNEK KULLANIM:\
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \strokec3 class\cf2 \strokec2  \cf5 \strokec5 hayvan\cf2 \strokec2 \{\cb1 \
+\cf3 \cb4 \strokec3 public:\cf2 \cb1 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb4     \cf3 \strokec3 virtual\cf2 \strokec2  \cf3 \strokec3 void\cf2 \strokec2  \cf6 \strokec6 sescikar\cf2 \strokec2 ()\{\cb1 \
+\cb4         \cf7 \strokec7 cout\cf6 \strokec6 <<\cf8 \strokec8 "Hayvan ses \'e7\uc0\u305 kar"\cf2 \strokec2 ;\cb1 \
+\cb4     \}\cb1 \
+\cb4     \cf3 \strokec3 void\cf2 \strokec2  \cf6 \strokec6 yazdir\cf2 \strokec2 ()\{\cb1 \
+\cb4         \cf7 \strokec7 cout\cf6 \strokec6 <<\cf8 \strokec8 "Hayvan s\uc0\u305 n\u305 f\u305 n\u305 n yazdir metodu \'e7a\u287 \u305 r\u305 ld\u305 "\cf2 \strokec2 ;\cb1 \
+\cb4     \}\cb1 \
+\cb4 \};\cb1 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \strokec3 class\cf2 \strokec2  \cf5 \strokec5 kedi\cf2 \strokec2 :\cf3 \strokec3 public\cf2 \strokec2  \cf5 \strokec5 hayvan\cf2 \strokec2 \{\cb1 \
+\cf3 \cb4 \strokec3 public:\cf2 \cb1 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb4     \cf3 \strokec3 void\cf2 \strokec2  \cf6 \strokec6 sescikar\cf2 \strokec2 ()\{\cb1 \
+\cb4         \cf7 \strokec7 cout\cf6 \strokec6 <<\cf8 \strokec8 "MYAV M\uc0\u304 YAV"\cf2 \strokec2 ; \cb1 \
+\cb4     \}\cb1 \
+\cb4     \cf3 \strokec3 void\cf2 \strokec2  \cf6 \strokec6 yazdir\cf2 \strokec2 ()\{\cb1 \
+\cb4         \cf7 \strokec7 cout\cf6 \strokec6 <<\cf8 \strokec8 "Kedi s\uc0\u305 n\u305 f\u305  yazdir"\cf2 \strokec2 ;\cb1 \
+\cb4 \}\cb1 \
+\cb4 \};\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \strokec3 class\cf2 \strokec2  \cf5 \strokec5 kopek\cf2 \strokec2 :\cf3 \strokec3 public\cf2 \strokec2  \cf5 \strokec5 hayvan\cf2 \strokec2 \{\cb1 \
+\cf3 \cb4 \strokec3 public:\cf2 \cb1 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb4     \cf3 \strokec3 void\cf2 \strokec2  \cf6 \strokec6 sescikar\cf2 \strokec2 ()\{\cb1 \
+\cb4         \cf7 \strokec7 cout\cf6 \strokec6 <<\cf8 \strokec8 "HAV HAV HAV HAV"\cf2 \strokec2 ; \cb1 \
+\cb4     \}\cb1 \
+\cb4     \cf3 \strokec3 void\cf2 \strokec2  \cf6 \strokec6 yazdir\cf2 \strokec2 ()\{\cb1 \
+\cb4         \cf7 \strokec7 cout\cf6 \strokec6 <<\cf8 \strokec8 "Kopek s\uc0\u305 n\u305 f\u305  yazdir"\cf2 \strokec2 ;\cb1 \
+\cb4 \}\cb1 \
+\cb4 \};\cb1 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf9 Ba\uc0\u351 \u305 nda virtual olan fonksiyon di\u287 er yavru classlardan kullan\u305 lan fonksiyon olacak.\
+\pard\pardeftab720\partightenfactor0
+\cf9 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \strokec3 int\cf2 \strokec2  \cf6 \strokec6 main\cf2 \strokec2 ()\{\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb4     \cb1 \
+\cb4     \cf5 \strokec5 hayvan\cf2 \strokec2  \cf10 \cb4 \strokec10 *\cf7 \cb4 \strokec7 phayvan\cf2 \strokec2 ;\cb1 \
+\cb4     \cf5 \strokec5 kedi\cf2 \strokec2  \cf7 \strokec7 tekir\cf2 \strokec2 ;\cb1 \
+\cb4     \cf7 \strokec7 phayvan\cf2 \strokec2  \cf10 \cb4 \strokec10 =\cf2 \cb4 \strokec2  \cf10 \cb4 \strokec10 &\cf7 \cb4 \strokec7 tekir\cf2 \strokec2 ;\cb1 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf9 Mainde hayvan t\'fcr\'fcnde printer olu\uc0\u351 turuyor.Bu printer yavru class\u305 n nesnesinin adresini tutuyor.BU SAYEDE YEN\u304  B\u304 R NESNE TANIMLAMADAN HAYVAN CLASSI \'dcZER\u304 NDEN YAVRU CLASSTAK\u304  FONKS\u304 YONA ER\u304 \u350 \u304 YOM.\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb4    \cf7 \strokec7 phayvan\cf2 \strokec2 ->\cf6 \strokec6 sescikar\cf2 \strokec2 (); \cb1 \
+\cb4     \cf7 \strokec7 cout\cf6 \strokec6 <<endl\cf2 \strokec2 ;\cb1 \
+\cb4     \cf7 \strokec7 cout\cf6 \strokec6 <<endl\cf2 \strokec2 ;\cb1 \
+\cb4     \cf7 \strokec7 phayvan\cf2 \strokec2 ->\cf6 \strokec6 yazdir\cf2 \strokec2 ();\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\
+\cf9 Ses\'e7\uc0\u305 kar fonksiyonu virtual oldu\u287 u i\'e7in yavru classtaki fonksiyonu \'e7ag\u305 ravak.\
+AMA D\uc0\u304 \u286 ER FONKS\u304 YON NORMAL FONKS\u304 YON OLDUGU \u304 \'c7\u304 N ANA CLASSTAK\u304 N\u304  \'c7AGIRACAK.\
+\cf11 \
+PO\uc0\u304 NTERLA ANA CLASSTAN NESNE OLU\u350 TUR DAHA SONRA O PO\u304 NTERA YAVRU CLASSTAN NESNE ADRESINI VER.ANA CLASS \u304 \'c7\u304 NDE V\u304 RTUAL EKLENT\u304 \u350 S\u304 YLE FONKS\u304 YON TANIMLA.AYNISININ NORMAL\u304 N\u304  YAVRU CLASSA DA EKLE.DAHA SONRA MA\u304 NDE TANIMLADIGIN POL\u304 MORF\u304 K TANIMDA V\u304 RTUAL FONKS\u304 YONU \'c7AGIRDIGINDA D\u304 REKT OLARAK YAVRU CLASSTAK\u304  \'c7ALI\u350 ACAK.\
+\
+Ba\uc0\u351 \u305 nda virtual olmayanlar normal \u351 ekilde \'e7al\u305 \u351 acak.\
+\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+NOT:\cf9 Ana classtan miras alan yavru class printer kullan\uc0\u305 rken ana classm\u305 \u351  gibi kullan\u305 labilir.\
+\'d6NEML\uc0\u304 \cf11 \
+\
+\cf2 \
+}

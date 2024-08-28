@@ -1,0 +1,1 @@
+out <<"Basamakları farklı sayı :" <<i<<endl;

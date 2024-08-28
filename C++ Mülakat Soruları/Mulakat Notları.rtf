@@ -1,0 +1,61 @@
+{\rtf1\ansi\ansicpg1254\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red183\green111\blue179;\red24\green24\blue24;\red193\green193\blue193;
+\red140\green211\blue254;\red202\green202\blue202;\red167\green197\blue152;\red0\green0\blue0;\red255\green255\blue255;
+\red89\green138\blue67;}
+{\*\expandedcolortbl;;\cssrgb\c77255\c52549\c75294;\cssrgb\c12157\c12157\c12157;\cssrgb\c80000\c80000\c80000;
+\cssrgb\c61176\c86275\c99608;\cssrgb\c83137\c83137\c83137;\cssrgb\c70980\c80784\c65882;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c100000;
+\cssrgb\c41569\c60000\c33333;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww15580\viewh13700\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 M\'dcLAKAT SORULARINDA B\uc0\u304 LMED\u304 \u286 \u304 M KISIMLAR:\
+\
+not:\
+x++ ve ++x farklar\uc0\u305 :\
+Bunlar\uc0\u305 n ikisi bir parantez i\'e7inde k\u305 yaslama halinde ise:\
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 while\cf4 \strokec4  (\cf5 \strokec5 x\cf6 \strokec6 ++<\cf4 \strokec4  \cf7 \strokec7 5\cf4 \strokec4  )\
+\pard\pardeftab720\partightenfactor0
+\cf8 \cb9 Bunda X in de\uc0\u287 erini artt\u305 rmadan 5 ile k\u305 yaslar\u305 m.\cf4 \cb1 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec2 while\cf4 \strokec4  (\cf6 \strokec6 ++\cf5 \strokec5 x\cf6 \strokec6 <\cf4 \strokec4  \cf7 \strokec7 5\cf4 \strokec4  )\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf8 Bunda X in de\uc0\u287 erini artt\u305 r\u305 r sonra 5 ile k\u305 yaslar\u305 m.\
+\
+\
+NOT:\
+++ SOLDA \uc0\u304 SE \'d6NCE DE\u286 ER\u304  ARTTIR.++ SA\u286 DA \u304 SE DE\u286 ER\u304  ARTTIRMADAN \'d6NCE KIYASLAMAYI YAP.\
+\
+NOT:\
+Parantez i\'e7i false olsa bile artt\uc0\u305 rma i\u351 lemi yap\u305 l\u305 r.\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\cf8 \outl0\strokewidth0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\cf8 \outl0\strokewidth0 \strokec4 \
+String dizisinin uzunlu\uc0\u287 unu \'f6l\'e7mek i\'e7in:\
+Strlen fonksiyonu kullan\uc0\u305 l\u305 r.\
+Bu string dizisinin uzunlu\uc0\u287 unu verir.\
+\
+\pard\pardeftab720\partightenfactor0
+\cf8 \outl0\strokewidth0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\cf8 \outl0\strokewidth0 \strokec4 \
+\pard\pardeftab720\partightenfactor0
+\cf8 NOT: Bir fonksiyonun yapt\uc0\u305 \u287 \u305  i\u351 lemin veya d\'fczenlemenin yap\u305 lan de\u287 i\u351 kenin kopyas\u305 na de\u287 ilde kendisine tyap\u305 lmas\u305 n\u305  istiyorsam ya pointerla yollayaca\u287 \u305 m ya da o de\u287 i\u351 kenin adresini vermeliyim.Fonksiyon parametre k\u305 sm\u305 nda.\
+D\uc0\u304 \u286 ER T\'dcRL\'dc KOPYASINI G\'d6NDER\u304 RS\u304 N VE KOPYASINDA DE\u286 \u304 \u350 \u304 KL\u304 K YAPARSIN.\
+\pard\pardeftab720\partightenfactor0
+\cf8 \outl0\strokewidth0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+NORMAL D\uc0\u304 Z\u304 N\u304 N UZUNLUGUNU BULMAK \u304 \'c7\u304 N:\
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 \outl0\strokewidth0 \strokec10 int boyut = sizeof(dizi);\cf4 \cb1 \strokec4 \
+\cf10 \cb3 \strokec10     int tur = sizeof(dizi[0]);\cf4 \cb1 \strokec4 \
+\pard\pardeftab720\partightenfactor0
+\cf8 \
+D\uc0\u304 Z\u304 N\u304 N TOPLAM BOYUTU/ D\u304 Z\u304 N\u304 N B\u304 R ELEMANININ BOYUTU YAPAB\u304 L\u304 R\u304 M.\
+\
+\pard\pardeftab720\partightenfactor0
+\cf8 \outl0\strokewidth0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\pardeftab720\partightenfactor0
+\cf8 \outl0\strokewidth0 \strokec4 \
+}

@@ -1,0 +1,190 @@
+{\rtf1\ansi\ansicpg1254\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red193\green193\blue193;\red70\green137\blue204;\red24\green24\blue24;
+\red67\green192\blue160;\red140\green211\blue254;\red0\green0\blue0;\red255\green255\blue255;\red212\green214\blue154;
+\red194\green126\blue101;\red183\green111\blue179;\red202\green202\blue202;}
+{\*\expandedcolortbl;;\cssrgb\c80000\c80000\c80000;\cssrgb\c33725\c61176\c83922;\cssrgb\c12157\c12157\c12157;
+\cssrgb\c30588\c78824\c69020;\cssrgb\c61176\c86275\c99608;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c100000;\cssrgb\c86275\c86275\c66667;
+\cssrgb\c80784\c56863\c47059;\cssrgb\c77255\c52549\c75294;\cssrgb\c83137\c83137\c83137;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww15460\viewh11340\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 OOP:\
+\
+Arba \'f6rne\uc0\u287 i verdi.\u304 lk ba\u351 ta dizayn yap sonra o dizayn\u305  temel alan ufak de\u287 i\u351 iklik olan alternatifleri olu\u351 tur.\
+\
+C++ DA SINIF OLU\uc0\u350 TURMAK \u304 \'c7\u304 N:\
+\uc0\u304 lk ba\u351 ta:\
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \strokec3 class\cf2 \strokec2  \cf5 \strokec5 araba\cf2 \strokec2 \{\cb1 \
+\cf3 \cb4 \strokec3 public:\cf2 \cb1 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb4     \cf5 \strokec5 string\cf2 \strokec2  \cf6 \strokec6 renk\cf2 \strokec2 ;\cb1 \
+\cb4 \};\
+\cf7 \cb8 Bu kodla class olu\uc0\u351 tu.Ben bu classtan nesne olu\u351 turmal\u305 y\u305 m bunun i\'e7in:\
+\
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb4 \strokec5 araba\cf2 \strokec2  \cf6 \strokec6 araba1\cf2 \strokec2 ;\cb1 \
+\cb4     \cf6 \strokec6 araba1\cf2 \strokec2 .\cf6 \strokec6 renk\cf2 \strokec2  \cf9 \cb4 \strokec9 =\cf2 \cb4 \strokec2  \cf10 \cb4 \strokec10 "beyaz"\cf2 \cb4 \strokec2 ;\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb4 \
+\cf7 \cb8 Classtan bir nesne olu\uc0\u351 turdum ve nesnenin rengine beyaz atad\u305 m.\
+\
+ASLINDA CLASSLARIN HER B\uc0\u304 R\u304  \u304 \'c7\u304 N B\u304 R BA\u350 KA CPP DOSYASI GEREK\u304 YOR.B\u304 Z HEADER DOSYALARIYLA \'c7ALI\u350 ACAGIZ.\
+HEADER \uc0\u304 LE CPP DOSYALARI BERABER \'c7ALI\u350 IYOR.\
+\
+Yazd\uc0\u305 \u287 \u305 m bir class\u305  maine eklemek istiyorsam e\u287 er bunun i\'e7in yapmam gerekenler:\
+\
+1) .h ile bir tane header dosyas\uc0\u305  olu\u351 turaca\u287 \u305 m.Bu normal class bilgilerini i\'e7erecek.\
+Header dosyas\uc0\u305 n\u305 n i\'e7inde \cf11 \cb4 \strokec11 #pragma\cf3 \cb4 \strokec3  \cf6 \strokec6 once\cf2 \cb1 \strokec2  \cf7 olmal\uc0\u305 d\u305 r.\
+\
+Daha sonra i\'e7ine class\uc0\u305 m\u305  yazaca\u287 \u305 m \'f6rnek a\u351 a\u287 \u305 daki gibi:\
+\
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb4 \strokec11 #pragma\cf3 \cb4 \strokec3  \cf6 \strokec6 once\cf2 \cb1 \strokec2 \
+\cf11 \cb4 \strokec11 #include\cf10 \cb4 \strokec10 <iostream>\cf2 \cb1 \strokec2 \
+\cf11 \cb4 \strokec11 using\cf2 \cb4 \strokec2  \cf3 \strokec3 namespace\cf2 \strokec2  \cf5 \strokec5 std\cf2 \strokec2 ;\cb1 \
+\
+\cf3 \cb4 \strokec3 class\cf2 \strokec2  \cf5 \strokec5 otomobil\cf2 \strokec2 \{\cb1 \
+\cf3 \cb4 \strokec3 public:\cf2 \cb1 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb4     \cf5 \strokec5 string\cf2 \strokec2  \cf6 \strokec6 renk\cf2 \strokec2 ;\cb1 \
+\cb4     \cf3 \strokec3 int\cf2 \strokec2  \cf6 \strokec6 beygir\cf2 \strokec2 ;\cb1 \
+\cb4     \cf5 \strokec5 string\cf2 \strokec2  \cf6 \strokec6 model\cf2 \strokec2 ;\cb1 \
+\
+\cb4     \cf3 \strokec3 void\cf2 \strokec2  \cf9 \cb4 \strokec9 ruhsatbilgileri\cf2 \cb4 \strokec2 ();\cb1 \
+\
+\cb4 \};\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb8 \
+Class\uc0\u305  ekledim ve class i\'e7ine fonksiyon tan\u305 m\u305 n\u305  yapabiliyorum. Bu yapt\u305 g\u305 m fonksiyonlar\u305  \'e7al\u305 \u351 t\u305 rmak i\'e7inde ba\u351 ka bir cpp dosyas\u305 na ihtiya\'e7 var ama CPP DOSYASI HEADER DOSYASI VE CLASS \u304 SM\u304  AYNI OLMALIDIR.\
+\
+Daha sonra fonksiyonu cpp i\'e7ine yazmak i\'e7in ilk ba\uc0\u351 ta cpp dosyas\u305  i\'e7ine\
+ \cf11 \cb4 \strokec11 #include\cf3 \cb4 \strokec3  \cf10 \cb4 \strokec10 "otomobil.h"\cf7 \cb8 \strokec2 \
+Entegre etmeliyiz.\
+\
+Daha sonra fonksiyonu istedi\uc0\u287 im \u351 ekilde yazaca\u287 \u305 m bunun i\'e7in:\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb4  \cf3 \strokec3 void\cf2 \strokec2  \cf5 \strokec5 otomobil\cf2 \strokec2 ::\cf9 \cb4 \strokec9 ruhsatbilgileri\cf2 \cb4 \strokec2 ()\{\cb1 \
+\cb4     \cf6 \strokec6 cout\cf9 \cb4 \strokec9 <<\cf10 \strokec10 "Model: "\cf9 \strokec9 <<\cf2 \cb4 \strokec2  \cf5 \strokec5 otomobil\cf2 \strokec2 ::\cf6 \strokec6 model\cf9 \cb4 \strokec9 <<endl\cf2 \cb4 \strokec2 ;\cb1 \
+\cb4     \cf6 \strokec6 cout\cf9 \cb4 \strokec9 <<\cf10 \strokec10 "Renk: "\cf9 \strokec9 <<\cf5 \cb4 \strokec5 otomobil\cf2 \strokec2 ::\cf6 \strokec6 renk\cf9 \cb4 \strokec9 <<endl\cf2 \cb4 \strokec2 ;\cb1 \
+\cb4     \cf6 \strokec6 cout\cf9 \cb4 \strokec9 <<\cf10 \strokec10 "Beygir: "\cf9 \strokec9 <<\cf5 \cb4 \strokec5 otomobil\cf2 \strokec2 ::\cf6 \strokec6 beygir\cf9 \cb4 \strokec9 <<endl\cf2 \cb4 \strokec2 ;\cb1 \
+\
+\
+\
+\cb4  \}\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb8 :: ile class i\'e7ine eri\uc0\u351 irim.\
+\'d6NEML\uc0\u304 .\
+\
+DAHA SONRA BU CLASSI MA\uc0\u304 N \u304 \'c7\u304 NDE KULLANMAK \u304 \'c7\u304 N:\
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb4 \strokec11 #include\cf3 \cb4 \strokec3  \cf10 \cb4 \strokec10 "otomobil.h"\cf2 \cb1 \strokec2 \
+\cf11 \cb4 \strokec11 #include\cf3 \cb4 \strokec3  \cf10 \cb4 \strokec10 "otomobil.cpp"\cf2 \cb1 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb8  HEM CPP HEMDE HEADER\uc0\u304  \u304 NCLUDE ETMEL\u304 Y\u304 M \'d6NEML\u304 \u304 \u304 \
+\
+En son olarak classtan bie nesne olu\uc0\u351 turup o nesneyle i\u351 lemler yap\u305 p fonksiyonu \'e7ag\u305 rabilirim.\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+Constructor:\
+Constructorlar classlar i\'e7indeki verileri teker teker doldurmakla u\uc0\u287 ra\u351 mamak i\'e7in tek sat\u305 rd\u305  doldurmaya yarar ve doldurulmas\u305  zorunlu k\u305 s\u305 mlar\u305  doldurmas\u305 n\u305  sa\u287 layabilirim.\
+\
+Asl\uc0\u305 nda her class\u305 n bir constructor metodu vard\u305 r ama bo\u351 tur.Ben kendim yazarak overloading yapm\u305 \u351  olurum.\
+\
+CLass ismiyle ba\uc0\u351 \u305 na void int falan gelmeden fonksiyon varsa o consructor metodudur.\
+\
+\pard\pardeftab720\partightenfactor0
+\cf9 \cb4 \strokec9 otomobil\cf2 \cb4 \strokec2 ();\cb1 \
+\cb4     \cf9 \cb4 \strokec9 otomobil\cf2 \cb4 \strokec2 (\cf5 \strokec5 string\cf2 \strokec2  \cf6 \strokec6 _renk\cf2 \strokec2 ,\cf3 \strokec3 int\cf2 \strokec2  \cf6 \strokec6 _beygir\cf2 \strokec2 ,\cf5 \strokec5 string\cf2 \strokec2  \cf6 \strokec6 _model\cf2 \strokec2 );\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb8 \'d6rnek consructor metodlar\uc0\u305 .\
+Bunlar\uc0\u305  header i\'e7ine yaz\u305 p daha sonra i\'e7eri\u287 ini .cpp de yapmam gerekiyor.\
+\
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb4 \strokec5 otomobil\cf2 \strokec2 ::\cf9 \cb4 \strokec9 otomobil\cf2 \cb4 \strokec2 (\cf5 \strokec5 string\cf2 \strokec2  \cf6 \strokec6 _renk\cf2 \strokec2 ,\cf3 \strokec3 int\cf2 \strokec2  \cf6 \strokec6 _beygir\cf2 \strokec2 ,\cf5 \strokec5 string\cf2 \strokec2  \cf6 \strokec6 _model\cf2 \strokec2 )\{\cb1 \
+\cb4     \cf6 \strokec6 renk\cf2 \strokec2  \cf9 \cb4 \strokec9 =\cf2 \cb4 \strokec2  \cf6 \strokec6 _renk\cf2 \strokec2 ;\cb1 \
+\cb4     \cf6 \strokec6 beygir\cf2 \strokec2  \cf12 \cb4 \strokec12 =\cf2 \cb4 \strokec2  \cf6 \strokec6 _beygir\cf2 \strokec2 ;\cb1 \
+\cb4     \cf6 \strokec6 model\cf2 \strokec2  \cf9 \cb4 \strokec9 =\cf2 \cb4 \strokec2  \cf6 \strokec6 _model\cf2 \strokec2 ;\cb1 \
+\cb4 \}\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb8  \
+Constructor metodu kullan\uc0\u305 m\u305  cpp de\
+\
+\'d6NEML\uc0\u304 .\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+PUBL\uc0\u304 C VS PR\u304 VATE:\
+Public metotlara ve de\uc0\u287 i\u351 kenlere her yerden eri\u351 ilebilir.\
+Private metotlara ve de\uc0\u287 i\u351 kenlere sadece .cpp ve .h dosyas\u305 nda eri\u351 ilir.Ba\u351 ka herhangi bir yerden eri\u351 ilemez.\
+\
+Private amac\uc0\u305  nedir?\
+K\uc0\u305 s\u305 tlamak ve kodumuzu korumak i\'e7in.\
+\
+-********\
+Metotlar\uc0\u305  ve de\u287 i\u351 kenleri private k\u305 llanmak i\'e7in:\
+\
+SETTER VE GETTER METOTLARI KULLANMAM GEREKL\uc0\u304 :\
+\
+Setter ve getter motolar\uc0\u305 n\u305  public olarak tan\u305 mlay\u305 p .h i\'e7ine ad\u305 n\u305  vermem gerekiyor.\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \strokec3 void\cf2 \strokec2  \cf9 \cb4 \strokec9 setRenk\cf2 \cb4 \strokec2 (\cf5 \strokec5 string\cf2 \strokec2  \cf6 \strokec6 _renk\cf2 \strokec2 );\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb4     \cf5 \strokec5 string\cf2 \strokec2  \cf9 \cb4 \strokec9 getRenk\cf2 \cb4 \strokec2 ();\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb8 \
+\
+SET \uc0\u304 LE DE\u286 \u304 \u350 KENE DE\u286 ER ATARKEN GET \u304 LE ATADIGIMIZ DE\u286 \u304 \u350 KEN\u304  GER\u304  D\'d6ND\'dcR\'dcR\'dcZ.\
+\
+\
+SET VE GET METOTLARININ .CPP \uc0\u304 \'c7\u304 NDE KULLANIMI:\
+\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \strokec3 void\cf2 \strokec2  \cf5 \strokec5 otomobil\cf2 \strokec2 ::\cf9 \cb4 \strokec9 setRenk\cf2 \cb4 \strokec2 (\cf5 \strokec5 string\cf2 \strokec2  \cf6 \strokec6 _renk\cf2 \strokec2 )\{\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb4     \cf5 \strokec5 otomobil\cf2 \strokec2 ::\cf6 \strokec6 renk\cf2 \strokec2  \cf9 \cb4 \strokec9 =\cf2 \cb4 \strokec2  \cf6 \strokec6 _renk\cf2 \strokec2 ;\cb1 \
+\cb4 \}\cb1 \
+\cf5 \cb4 \strokec5 string\cf2 \strokec2  \cf5 \strokec5 otomobil\cf2 \strokec2 ::\cf9 \cb4 \strokec9 getRenk\cf2 \cb4 \strokec2 ()\{\cb1 \
+\cb4     \cf11 \cb4 \strokec11 return\cf2 \cb4 \strokec2  \cf5 \strokec5 otomobil\cf2 \strokec2 ::\cf6 \strokec6 renk\cf2 \strokec2 ;\cb1 \
+\cb4 \}\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb8 NOT:\'d6NEML\uc0\u304 \
+PR\uc0\u304 VATE TANIMLANAN HER DE\u286 \u304 \u350 KEN\u304 N ER\u304 \u350 MEK VE ATAMA YAPMAK \u304 \'c7\u304 N SET VE GET METODU TANIMLANMALIDIR.\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+ENCAPSULATION:\
+OOP N\uc0\u304 N TEMEL PRENS\u304 PLER\u304 NDEN B\u304 R\u304 D\u304 R.\
+B\uc0\u304 R NESNENN VE\u304 LER\u304  SADECE NESNEN\u304 N KEND\u304 S\u304  \u304 \'c7\u304 NDEK\u304  FONKS\u304 YONLAR ARACILI\u286 ILA ER\u304 \u350 \u304 LEB\u304 L\u304 R HALE GET\u304 R\u304 LMES\u304 NE DEN\u304 R.\
+\
+D\uc0\u304 KKAT \'d6NEML\u304 \u304 .\
+\
+HER DE\uc0\u286 \u304 \u350 KEN\u304  PR\u304 VATE TANIMLA VE GET SET METOTLARINI YAZ.\'d6NEML\u304 .\
+\
+SET VE GET METOTLARINI TANIMLAMAYI \'d6GREND\uc0\u304 M TAMAMDIR BU \u304 \u350 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\cf2 \cb4 \
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb1 \
+}

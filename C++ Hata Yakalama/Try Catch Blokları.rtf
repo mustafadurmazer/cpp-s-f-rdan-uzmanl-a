@@ -1,0 +1,150 @@
+{\rtf1\ansi\ansicpg1254\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red193\green193\blue193;\red24\green24\blue24;\red183\green111\blue179;
+\red70\green137\blue204;\red140\green211\blue254;\red212\green214\blue154;\red194\green126\blue101;\red202\green202\blue202;
+\red167\green197\blue152;\red0\green0\blue0;\red67\green192\blue160;}
+{\*\expandedcolortbl;;\cssrgb\c80000\c80000\c80000;\cssrgb\c12157\c12157\c12157;\cssrgb\c77255\c52549\c75294;
+\cssrgb\c33725\c61176\c83922;\cssrgb\c61176\c86275\c99608;\cssrgb\c86275\c86275\c66667;\cssrgb\c80784\c56863\c47059;\cssrgb\c83137\c83137\c83137;
+\cssrgb\c70980\c80784\c65882;\cssrgb\c0\c0\c0;\cssrgb\c30588\c78824\c69020;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww14000\viewh14180\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Try Catch Yap\uc0\u305 s\u305  C++;\
+\
+C++ de try catch kullan\uc0\u305 rken 2 \u351 ey \'f6nemli!\
+\
+Try ve catch yap\uc0\u305 s\u305 \
+\
+Try ile hata \'e7\uc0\u305 kmas\u305  muhtemel kodu yaz\u305 yorum\
+Catch \uc0\u351 ile de hata \'e7\u305 kt\u305 \u287 \u305 nda kodumun ne yapmas\u305 n\u305  gerekti\u287 ini se\'e7iyorum.\
+\'d6nemli!!!\
+\
+Try k\uc0\u305 sm\u305 ndaki throw etti\u287 im de\u287 i\u351 keni catch k\u305 sm\u305 nda yakal\u305 yorum ve ona g\'f6re bi cevap yazd\u305 r\u305 yorum.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2  \cf4 \strokec4 try\cf2 \strokec2 \{\cb1 \
+\cb3         \cf5 \strokec5 int\cf2 \strokec2  \cf6 \strokec6 yas\cf2 \strokec2 ;\cb1 \
+\cb3         \cf6 \strokec6 cout\cf7 \strokec7 <<\cf8 \strokec8 "Yas\uc0\u305 n\u305 z?"\cf7 \strokec7 <<endl\cf2 \strokec2 ;\cb1 \
+\cb3         \cf6 \strokec6 cin\cf7 \strokec7 >>\cf6 \strokec6 yas\cf2 \strokec2 ;\cb1 \
+\cb3         \cf6 \strokec6 cout\cf7 \strokec7 <<endl\cf2 \strokec2 ;\cb1 \
+\cb3         \cf4 \strokec4 if\cf2 \strokec2 (\cf6 \strokec6 yas\cf9 \strokec9 >\cf10 \strokec10 20\cf2 \strokec2 )\{\cb1 \
+\cb3             \cf6 \strokec6 cout\cf7 \strokec7 <<\cf8 \strokec8 "Yas\uc0\u305 n\u305 z yeterince buyuk"\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf4 \strokec4 else\cf2 \strokec2 \{\cb1 \
+\cb3             \cf4 \strokec4 throw\cf2 \strokec2 (\cf6 \strokec6 yas\cf2 \strokec2 );\cb1 \
+\cb3         \}\cb1 \
+\cb3     \}\cb1 \
+\cb3     \cf4 \strokec4 catch\cf2 \strokec2  (\cf5 \strokec5 int\cf2 \strokec2  \cf6 \strokec6 hatano\cf2 \strokec2 )\{\cb1 \
+\cb3         \cf6 \strokec6 cout\cf7 \strokec7 <<\cf8 \strokec8 "Yas\uc0\u305 n\u305 z kucuk yas\u305 n\u305 z: "\cf7 \strokec7 <<\cf6 \strokec6 hatano\cf2 \strokec2 ;\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3     \}\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\cf11 Bu kodla hatay\uc0\u305  yakalad\u305 m.\
+\
+Try catch sayesinde if elseleri yazmadan hatam\uc0\u305 n kodunu belirlerim 0 kodu kullan\u305 c\u305 ya d\'fczeltmesi i\'e7in g\'f6nderebilirim.\
+\'d6RNEK KOD:\
+\
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb3 \strokec4 try\cf2 \strokec2 \{\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3         \cf5 \strokec5 int\cf2 \strokec2  \cf6 \strokec6 x\cf2 \strokec2  \cf9 \strokec9 =\cf2 \strokec2  \cf10 \strokec10 30\cf2 \strokec2 ;\cb1 \
+\cb3         \cf5 \strokec5 int\cf2 \strokec2  \cf6 \strokec6 y\cf2 \strokec2 ;\cb1 \
+\cb3         \cf6 \strokec6 cout\cf7 \strokec7 <<\cf8 \strokec8 "Pozitif say\uc0\u305  girin!"\cf7 \strokec7 <<endl\cf2 \strokec2 ;\cb1 \
+\cb3         \cf6 \strokec6 cin\cf7 \strokec7 >>\cf6 \strokec6 y\cf2 \strokec2 ;\cb1 \
+\
+\cb3         \cf4 \strokec4 if\cf2 \strokec2 (\cf6 \strokec6 y\cf2 \strokec2  \cf9 \strokec9 ==\cf2 \strokec2  \cf10 \strokec10 0\cf2 \strokec2 )\{\cb1 \
+\cb3             \cf4 \strokec4 throw\cf2 \strokec2  \cf10 \strokec10 100\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf4 \strokec4 else\cf2 \strokec2  \cf4 \strokec4 if\cf2 \strokec2 (\cf6 \strokec6 y\cf9 \strokec9 <\cf10 \strokec10 0\cf2 \strokec2 )\{\cb1 \
+\cb3             \cf4 \strokec4 throw\cf2 \strokec2  \cf10 \strokec10 101\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf4 \strokec4 else\cf2 \strokec2 \{\cb1 \
+\cb3             \cf5 \strokec5 int\cf2 \strokec2  \cf6 \strokec6 z\cf2 \strokec2  \cf9 \strokec9 =\cf2 \strokec2  \cf6 \strokec6 x\cf9 \strokec9 /\cf6 \strokec6 y\cf2 \strokec2 ;\cb1 \
+\cb3             \cf6 \strokec6 cout\cf2 \strokec2  \cf7 \strokec7 <<\cf2 \strokec2  \cf6 \strokec6 z\cf2 \strokec2  \cf7 \strokec7 <<\cf2 \strokec2  \cf7 \strokec7 endl\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3     \}\cb1 \
+\cb3     \cf4 \strokec4 catch\cf2 \strokec2 (\cf5 \strokec5 int\cf2 \strokec2  \cf6 \strokec6 hatakodu\cf2 \strokec2 )\{\cb1 \
+\cb3         \cf6 \strokec6 cout\cf7 \strokec7 <<\cf8 \strokec8 "Bir exception olu\uc0\u351 tu, hata kodu: "\cf7 \strokec7 <<\cf6 \strokec6 hatakodu\cf7 \strokec7 <<endl\cf2 \strokec2 ;\cb1 \
+\cb3         \cf4 \strokec4 return\cf2 \strokec2  \cf9 \strokec9 -\cf10 \strokec10 1\cf2 \strokec2 ;\cb1 \
+\cb3     \}\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\cf11 100 ve 101 hata kodlar\uc0\u305 n\u305  belirledim istersem de\u287 i\u351 tiririm bana kalm\u305 \u351 !\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+TRY CATCH ASIL KULLANIMI NESNELER ARACILIGLA OLUR!\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3 \strokec5 class\cf2 \strokec2  \cf12 \cb3 \strokec12 hatas\uc0\u305 n\u305 f\u305 \cf2 \cb3 \strokec2 \{\cb1 \
+\cf5 \cb3 \strokec5 private:\cf2 \cb1 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3     \cf12 \cb3 \strokec12 string\cf2 \cb3 \strokec2  \cf6 \strokec6 hatamesaji\cf2 \strokec2 ;  \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3 \strokec5 public:\cf2 \cb1 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3     \cf7 \strokec7 hatas\uc0\u305 n\u305 f\u305 \cf2 \strokec2 (\cf12 \cb3 \strokec12 string\cf2 \cb3 \strokec2  \cf6 \strokec6 _hatamesaj\uc0\u305 \cf2 \strokec2 )\{\cb1 \
+\cb3         \cf6 \strokec6 hatamesaji\cf2 \strokec2  \cf7 \strokec7 =\cf2 \strokec2  \cf6 \strokec6 _hatamesaj\uc0\u305 \cf2 \strokec2 ;\cb1 \
+\cb3     \}\cb1 \
+\cb3     \cf12 \cb3 \strokec12 string\cf2 \cb3 \strokec2  \cf7 \strokec7 gethata\cf2 \strokec2 ()\{\cb1 \
+\cb3         \cf4 \strokec4 return\cf2 \strokec2  \cf6 \strokec6 hatamesaji\cf2 \strokec2 ;\cb1 \
+\cb3     \}\cb1 \
+\cb3 \};\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3 \strokec5 int\cf2 \strokec2  \cf7 \strokec7 main\cf2 \strokec2 ()\{\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3     \cf4 \strokec4 try\cf2 \strokec2 \{\cb1 \
+\cb3         \cf4 \strokec4 throw\cf2 \strokec2  \cf12 \cb3 \strokec12 hatas\uc0\u305 n\u305 f\u305 \cf2 \cb3 \strokec2 (\cf8 \strokec8 "hata mesaj\uc0\u305  no:1"\cf2 \strokec2 );\cb1 \
+\
+\cb3     \}\cb1 \
+\cb3     \cf4 \strokec4 catch\cf2 \strokec2 (\cf12 \cb3 \strokec12 hatas\uc0\u305 n\u305 f\u305 \cf2 \cb3 \strokec2  \cf6 \strokec6 h\cf2 \strokec2 )\{\cb1 \
+\cb3         \cf6 \strokec6 cout\cf7 \strokec7 <<\cf8 \strokec8 "Exception yakaland\uc0\u305 ! "\cf7 \strokec7 <<\cf6 \strokec6 h\cf2 \strokec2 .\cf7 \strokec7 gethata\cf2 \strokec2 ()\cf7 \strokec7 <<endl\cf2 \strokec2 ;\cb1 \
+\cb3     \}\cb1 \
+\
+\cb3     \cf4 \strokec4 return\cf2 \strokec2  \cf10 \strokec10 0\cf2 \strokec2 ;\cb1 \
+\cb3 \}\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf11 BURADA NESNE KULLANARAK MESAJ \uc0\u304 LETT\u304 M.ASIL KULLANIMI B\'d6YLE NESNELERLE OLUR.\'d6NEML\u304 !\
+ \'97__________________________-\
+\
+NOT: Bir try yap\uc0\u305 s\u305 na 2 adet catch gelebilir. Ve 2 catch dosyas\u305  dan farkl\u305  t\'fcr de de\u287 i\u351 ken alabilir.Biri nesne al\u305 rken di\u287 eri int de\u287 er alabilir.\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+NOT:\
+\
+Catch yap\uc0\u305 s\u305 n\u305 n i\'e7ine koyaca\u287 \u305 m \'85 ile t\'fcr farketmeksizin b\'fct\'fcn hatalar\u305  yakalayabilirim.Ama tabiki hatan\u305 n t\'fcr\'fcn\'fc bilemem.\
+\'d6NEML\uc0\u304 !\
+\
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb3 \strokec4 catch\cf2 \strokec2 (...)\{\}\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf11 \
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+NOT:\
+Normalde hata s\uc0\u305 n\u305 flar\u305  ayr\u305  .h ve .cpp dosyalar\u305  ile yap\u305 l\u305 r.Buna dikkat et b\'f6yle olur.Yap\u305 m\u305  kolay old. \u304 \'e7in yazmad\u305 m AMA B\u304 L\u304 YOM.\
+Normal header ve cep dosyas\uc0\u305  gibi.!\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\cf2 \
+}

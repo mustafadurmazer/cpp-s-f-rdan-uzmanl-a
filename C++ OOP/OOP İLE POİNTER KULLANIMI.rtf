@@ -1,0 +1,138 @@
+{\rtf1\ansi\ansicpg1254\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red193\green193\blue193;\red24\green24\blue24;\red67\green192\blue160;
+\red202\green202\blue202;\red140\green211\blue254;\red89\green138\blue67;\red0\green0\blue0;\red183\green111\blue179;
+\red194\green126\blue101;\red167\green197\blue152;\red212\green214\blue154;\red0\green0\blue255;\red33\green255\blue255;
+\red70\green137\blue204;}
+{\*\expandedcolortbl;;\cssrgb\c80000\c80000\c80000;\cssrgb\c12157\c12157\c12157;\cssrgb\c30588\c78824\c69020;
+\cssrgb\c83137\c83137\c83137;\cssrgb\c61176\c86275\c99608;\cssrgb\c41569\c60000\c33333;\cssrgb\c0\c0\c0;\cssrgb\c77255\c52549\c75294;
+\cssrgb\c80784\c56863\c47059;\cssrgb\c70980\c80784\c65882;\cssrgb\c86275\c86275\c66667;\cssrgb\c1680\c19835\c100000;\cssrgb\c0\c99144\c100000;
+\cssrgb\c33725\c61176\c83922;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww15380\viewh5540\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5560\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 OOP \uc0\u304 LE PO\u304 NTER:\
+\
+Pointerlarla class kullan\uc0\u305 m\u305 .\
+Bunu 2 y\'f6ntemle yapabilirim.\
+\uc0\u304 lk y\'f6ntem:\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2  \cf4 \strokec4 otomobil\cf2 \strokec2  \cf5 \strokec5 *\cf6 \strokec6 p\cf2 \strokec2 ;\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7    p = &otomobil1;\cf2 \cb1 \strokec2 \
+\cf7 \cb3 \strokec7    p->ruhsatbilgileri();\cf2 \cb1 \strokec2 \
+\cf7 \cb3 \strokec7    \cf2 \cb1 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+\cf8 Daha \'f6nce tan\uc0\u305 mlam\u305 \u351  oldugum
+\f0  bir nesnenin adresini pointer ile tutabilirim.Bunun i\'e7in\
+Yukar\uc0\u305 daki gibi nesnenin adresini pointera vermemiz gerekiyor.\
+\
+Daha sonras\uc0\u305 nda nesnenin \'f6\'e7zelliklerine pointer \'fczerinden eri\u351 mek istiyorsak -> kullanmak zorunday\u305 m.\
+Bu i\uc0\u351 aretle pointerdan nesnenin \'f6zelliklerine ve metotlar\u305 na ula\u351 abilirim.\
+\
+1.y\'f6ntemde daha \'f6nce tan\uc0\u305 mlanm\u305 \u351  bir nesne vard\u305  ve onu pointera bagl\u305 uyorduk.\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+2.Y\'d6NTEM:\
+\
+2. Y\'f6ntemde pointer arac\uc0\u305 l\u305 \u287 \u305 yla yeni bir nesne olu\u351 turaca\u287 \u305 z.Ama ad\u305 n\u305  vermeyece\u287 iz.Otomobil1 gibi sadece bellekte bi yerde duracak.\u304 \u351 letim sistemi ayarlayacak bunu.\
+
+\f1 \cf2 \
+\cf8 BUNUN \uc0\u304 \'c7\u304 N:\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3  \cf4 \strokec4 otomobil\cf2 \strokec2  \cf5 \strokec5 *\cf6 \strokec6 p\cf2 \strokec2 ;\cb1 \
+\cb3     \cf6 \strokec6 p\cf2 \strokec2  \cf5 \strokec5 =\cf2 \strokec2  \cf9 \cb3 \strokec9 new\cf2 \cb3 \strokec2  \cf4 \strokec4 otomobil\cf2 \strokec2 (\cf10 \cb3 \strokec10 "Sar\uc0\u305 "\cf2 \cb3 \strokec2 ,\cf11 \cb3 \strokec11 90\cf2 \cb3 \strokec2 ,\cf10 \cb3 \strokec10 "Bmw"\cf2 \cb3 \strokec2 );\cb1 \
+\cb3     \cf6 \strokec6 p\cf2 \strokec2 ->\cf12 \cb3 \strokec12 setRenk\cf2 \cb3 \strokec2 (\cf10 \cb3 \strokec10 "KAHVERENG\uc0\u350 "\cf2 \cb3 \strokec2 );\cb1 \
+\cb3     \cf6 \strokec6 p\cf2 \strokec2 ->\cf12 \cb3 \strokec12 ruhsatbilgileri\cf2 \cb3 \strokec2 ();\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf8 \uc0\u304 le bellekte yeni bir yer ay\u305 r\u305 yorum ve bellekteki yere sar\u305  90 bmw de\u287 i\u351 kenlerini yaz\u305 yom.\
+Daha sonra p-> ile i\'e7indeki metotlara eri\uc0\u351 iyorum.\
+NORMAL NESNE TANIMLAMADAN FARKI YOKTUR.TEK FARK BUNDA NESNEN\uc0\u304 N B\u304 R \u304 SM\u304  YOK.PO\u304 NTER ADIYLA ER\u304 \u350 \u304 YORUM.PO\u304 NTER\u304  B\u304 R NESNEYE AKATAB\u304 L\u304 R\u304 M. O KOLAY.\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+DESTRUCTORS:\
+Nas\uc0\u305 l constructor ile classtan bir nesne olu\u351 turuyorsak destructors ile de o olu\u351 turuldu\u287 umuz nesneden \'e7\u305 k\u305 \u351  yapabiliriz.YAN\u304  S\u304 LEB\u304 L\u304 R\u304 Z.\
+NORMAL NESNELER\uc0\u304  OLU\u350 TURURKEN SCOPEDEN \'c7IKTIGIMDA NESNE S\u304 L\u304 N\u304 RKEN(DESTRUCTORS MODUNA GE\'c7ER) PO\u304 NTER S\u304 L\u304 NMEZ.PO\u304 NTERLE OLU\u350 TURLAN NESNEY\u304  DE S\u304 LMEK \u304 \'c7\u304 N DELETE KULLANMAK GEREKL\u304 D\u304 R.YOKSA BELLEKTEK\u304  YER S\u304 L\u304 NMEZ.\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 // DESTRUCTOR\cf2 \cb1 \strokec2 \
+\cb3     \cf12 \cb3 \strokec12 ~otomobil\cf2 \cb3 \strokec2 ();\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf8 HEADER \uc0\u304 \'c7\u304 NE ~\u304 \u350 ARET\u304 LYE B\u304 RL\u304 KTE NESNE \u304 SM\u304 N\u304  TANIMLAAMMG EREK\u304 YOR.\
+~\uc0\u304 \u350 ARET\u304  OPT\u304 ON \'dc \u304 LE YAPILIR.\
+\
+DAHA SONRA .CPP \uc0\u304 \'c7\u304 NE:\
+\
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 // OTOMOB\uc0\u304 L DESTRUCTOR\cf2 \cb1 \strokec2 \
+\
+\cf4 \cb3 \strokec4 otomobil\cf2 \strokec2 ::\cf12 \cb3 \strokec12 ~otomobil\cf2 \cb3 \strokec2 ()\{\cb1 \
+\cb3     \cf6 \strokec6 cout\cf12 \cb3 \strokec12 <<\cf4 \cb3 \strokec4 otomobil\cf2 \strokec2 ::\cf6 \strokec6 model\cf12 \cb3 \strokec12 <<\cf10 \strokec10 " Destructor \'e7ag\uc0\u305 r\u305 ld\u305 "\cf2 \cb3 \strokec2 ;\cb1 \
+\cb3     \cf6 \strokec6 cout\cf12 \cb3 \strokec12 <<endl\cf2 \cb3 \strokec2 ;\cb1 \
+\cb3 \}\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf8 Cpp i\'e7ini doldurabilirim.\
+DESTRUCTORS \uc0\u304 \'c7\u304 N.\
+\
+Main i\'e7inde normal yolla nesne olu\uc0\u351 turulurken constructor ile nesne olu\u351 turulur ve scpoeden \'e7\u305 kt\u305 \u287 \u305 nda destructor ile silinir.KALDIRILIR.\
+\
+PO\uc0\u304 NTER \u304 LE OLU\u350 TURDUGUMDA S\u304 LMEY\u304  UNUTMA!\
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 // PO\uc0\u304 NTERLA OLU\u350 TURULAN SINIFLAR MUTLAKA \u304 \u350 \u304 N\u304 Z B\u304 TT\u304 \u286 \u304 NDE DELETE ED\u304 N!\cf2 \cb1 \strokec2 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf8 \
+S\uc0\u304 LMEZSEN E\u286 ER DESTRUCTOR \'c7ALI\u350 MAZ VE BELLEKTEK\u304  YER S\u304 L\u304 NMEZ. \'d6NEML\u304 !\
+\
+\cb13 DESTRUCTORLAR SADECE C++ DA \'c7ALI\uc0\u350 OR \'d6NEML\u304 \
+\
+\cb14 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+SINIF \uc0\u304 \'c7\u304 NDE PO\u304 NTER KULLANIMI:\cb1 \
+\
+S\uc0\u305 n\u305 f tan\u305 m\u305  yaparken int string gibi birka\'e7 veri tipi kullanabilirim.VEYA PO\u304 NTERDA KULANAB\u304 L\u304 R\u304 M.Bunun i\'e7in:\
+.h i\'e7ine normal bir \uc0\u351 ekilde\
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\cb3     \cf15 \cb3 \strokec15 int\cf2 \cb3 \strokec2  \cf5 \strokec5 *\cf6 \strokec6 Kap\uc0\u305 Sayisi\cf2 \strokec2 ;\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf8  Tan\uc0\u305 m\u305  yapar\u305 m.Daha sonra constructor i\'e7ine bunu eklemem gerekiyor.Bu bir pointer ve adres tutaca\u287 \u305  i\'e7in ve nesne tan\u305 mlarken pointer vermesi zor old i\'e7in ben bir int al\u305 r\u305 m nesne tan\u305 mlan\u305 rken ve bu int i\'e7in:\
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb3 \strokec6 Kap\uc0\u305 Sayisi\cf2 \strokec2  \cf5 \strokec5 =\cf2 \strokec2  \cf9 \cb3 \strokec9 new\cf2 \cb3 \strokec2  \cf15 \cb3 \strokec15 int\cf2 \cb3 \strokec2 (\cf6 \strokec6 kp\cf2 \strokec2 );\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf8 Yeni bir int kadarl\uc0\u305 k yer ay\u305 rt\u305 p bunun adresinin pointera veririm.Bu sayede pointer i\'e7ini doldururum.Daha sonra pointer i\'e7indeki veriyi kullanmak i\'e7in de * kullanarak veriyi okurum.\
+CONSTRUCTOR \uc0\u304 \'c7\u304 NE VER\u304  YAZACAKSAM BUNU .H \u304 \'c7\u304 NDEK\u304  \u304 MZAYADA EKLEMEL\u304 Y\u304 M.\
+Kolay yap\uc0\u305 l\u305 r\
+\
+\
+\
+\
+\
+ \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}
